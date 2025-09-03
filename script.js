@@ -7,14 +7,14 @@
 
 //Q1.CURRING FUNCTION 
 
-function curring(a){
+function add3(a){
     return function(b){
         return function(c){
             console.log(a+b+c)
         }
     }
 }
-curring(22)(27)(25)
+add3(22)(27)(25)
 
 //Q3.GEN FUNCTION
 
@@ -40,6 +40,10 @@ console.log(uncurr(11,12,13))
 
 let fruits=["apple",,"grapes","banana"]
     console.log(fruits[1]) // undefined 
+
+
+    let fru=["apple","","grapes","banana"]
+    console.log(fru[1]) // can fill the gap
 
 //Q6.HOMOGENEOUSE
 
@@ -107,3 +111,4 @@ var user={
 
  console.log(user.completedtraining("javascript"))
  console.log(user.completedtraining("javascript"))
+
